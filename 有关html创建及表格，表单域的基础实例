@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--表单一定要以表单域<form></form>开始和结束，也就是写表单一般一定要有表单域-->
+		<form method="post" action="">
+			<div>
+			<!--
+				<label></label>
+			<input>标签
+				
+				-->
+				<label for="name">姓名：</label>
+				<input id="name" name="name" type="text" value="文本"/>
+			</div>
+				<div>
+			<!--
+				<label></label>
+			<input>标签
+				
+				-->
+				<label for="pwd">密码：</label>
+				<input id="pwd" name="pwd" type="password" value="文本" />
+			</div>
+				<div>
+			<!--
+				<label></label>
+			<input>标签
+				
+				-->
+				<label for="sex">性别：</label>
+				<input id="sex" name="sex" type="radio" value="男" checked="true"/>男
+				<input id="sex" name="sex" type="radio" value="女" />女
+			</div>
+			<div>
+			<!--
+				<label></label>
+			<input>标签
+				
+				-->
+				<label for="fav">工作：</label>
+				<input id="fav" name="fav" type="checkbox" value="老师" checked="true"/>老师
+				<input id="fav" name="fav" type="checkbox" value="学生" />学生
+				<input id="fav" name="fav" type="checkbox" value="教授" />教授
+				<input id="fav" name="fav" type="checkbox" value="研究人员" checked="true"/>研究人员
+			</div>
+			<div>
+			<!--
+				<label></label>
+			<input>标签
+				如果要上传文件，使用type="file"的属性值，但是普通表单只能上传字符数据，
+				如果上传文件，必须在<form></form>表单域标签中添加enctype="multipartform-date"
+				此时为多部分上传表单数据模式，可以上传字节数据
+				-->
+				<label for="photo">上传：</label>
+				<input id="photo" name="photo" type="file"/>
+				
+			</div>
+				
+			<div>
+			<!--
+				<label></label>
+			<input>标签
+				h5新增的input类型
+				-->
+				<label for="color">颜色：</label>
+				<input id="color" name="color" type="color" />
+	
+			</div>
+			<div>
+			<!--
+				<label></label>
+			<input>标签
+				h5新增的input类型
+				-->
+				<label for="date">时间：</label>
+				<input id="date" name="date" type="date" />
+	
+			</div>
+			<div>
+			<!--
+				<label></label>
+			<input>标签
+				
+			-->
+				<input id="hidden" name="hidden" value="hidden" type="hidden" />
+	
+			</div>
+			<div>
+			<!--
+				<label></label>
+			<input>标签
+				
+			-->
+				<input id="hidden" name="hidden" value="hidden" type="hidden" />
+	
+			</div>
+			<div>
+			<!--
+				<label></label>
+			<input>标签
+				h5新增的input类型
+				-->
+				<label for="year">年份：</label>
+				<select id="year" name="year">
+					<option>1990</option>
+					<option>1991</option>
+					<option>1992</option>
+					<option>1993</option>
+					<option selected="true">2019</option>
+				</select>
+	
+			</div>
+			<br/>
+           <div>
+			<!--
+				<label></label>
+			<input>标签
+				h5新增的input类型
+				-->
+				<label for="year1">多选年份：</label>
+				<select id="year1" name="year1" multiple="true">
+					<option>1990</option>
+					<option>1991</option>
+					<option>1992</option>
+					<option>1993</option>
+					<option selected="true">2019</option>
+				</select>
+	
+			</div>
+			<div>
+			<!--
+				<label></label>
+			<input>标签
+				
+			-->
+			
+			<input id="image" name="image" type="image" src="../imges/img-8fba31e86ab7c908a627cf3ea4f4a16e.jpg" width=300 height="400"/>
+				<input id="submit" name="submit" type="submit" value="发送"/>
+				<input id="reset" name="reset" type="reset" value="重置"/>
+				</div>
+		</form>
+	</body>
+</html>
